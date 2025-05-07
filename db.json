@@ -1,55 +1,29 @@
 {
-    "todos": [
-      {
-        "id": 1,
-        "title": "Learn Nuxt basics",
-        "completed": false
-      },
-      {
-        "id": 2,
-        "title": "Set up Nuxt project",
-        "completed": true
-      },
-      {
-        "id": 3,
-        "title": "Create a header component",
-        "completed": false
-      },
-      {
-        "id": 4,
-        "title": "Build Todo List component",
-        "completed": false
-      },
-      {
-        "id": 5,
-        "title": "Add task filter feature",
-        "completed": false
-      },
-      {
-        "id": 6,
-        "title": "Implement Vue composables",
-        "completed": false
-      },
-      {
-        "id": 7,
-        "title": "Connect with json-server",
-        "completed": true
-      },
-      {
-        "id": 8,
-        "title": "Style with Tailwind CSS",
-        "completed": false
-      },
-      {
-        "id": 9,
-        "title": "Add dark mode support",
-        "completed": false
-      },
-      {
-        "id": 10,
-        "title": "Deploy on Netlify or Firebase",
-        "completed": false
-      }
-    ]
-  }
-  
+  "todos": [
+    {
+      "id": "1a2b",
+      "title": "Learn React",
+      "favourite": true
+    },
+    {
+      "id": "3c4d",
+      "title": "Practice Vue.js",
+      "favourite": false
+    },
+    {
+      "id": "5e6f",
+      "title": "Update Portfolio",
+      "favourite": true
+    },
+    {
+      "id": "7g8h",
+      "title": "Read JavaScript Guide",
+      "favourite": false
+    },
+    {
+      "id": "9i0j",
+      "title": "Deploy Firebase App",
+      "favourite": true
+    }
+  ]
+}
