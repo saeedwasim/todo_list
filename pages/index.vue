@@ -17,10 +17,10 @@
       <div class="flex flex-col sm:flex-row justify-end">
         <button class="w-full sm:w-32 py-1 mr-5 bg-white border border-gray-400 cursor-pointer rounded"
           @click="showAllTasks">
-          All Tasks
+          All Todos
         </button>
         <button class="px-5 py-1 mt-3 sm:mt-0 bg-[#f8cb42] cursor-pointer rounded" @click="favouriteTasks">
-          Favourite Tasks
+          Favourite Todos
         </button>
       </div>
       <div>
@@ -54,6 +54,8 @@ import trash from '~/assets/icons/trash.vue';
 import borderHeart from '~/assets/icons/border-heart.vue';
 import logo from '~/assets/icons/logo.vue';
 import { showTodo } from '@/store/todo';
+import { useToast } from 'vue-toastification';
+const toast = useToast();
 const heading = ref("All Tasks");
 const todo = showTodo();
 const formData = reactive({
@@ -72,6 +74,7 @@ const addTodo = async () => {
     return;
   }
   await todo.handleAddTodo(formData);
+  toast.success('Todo Added Successfully!');
   formData.title = "";
   if (heading.value === "All Tasks") {
     filteredTodos.value = todo.getAllTodos
@@ -82,6 +85,8 @@ const addTodo = async () => {
 const dltTodo = async (id) => {
   await todo.handleDeleteTodo(id);
   filteredTodos.value = filteredTodos.value.filter(item => item.id !== id)
+  toast.error('Todo Deleted Successfully!');
+
 };
 const changeFavouriteStatus = async (item) => {
   item.favourite = !item.favourite;
