@@ -1,29 +1,3 @@
 {
-  "todos": [
-    {
-      "id": "1a2b",
-      "title": "Learn React",
-      "favourite": true
-    },
-    {
-      "id": "3c4d",
-      "title": "Practice Vue.js",
-      "favourite": false
-    },
-    {
-      "id": "5e6f",
-      "title": "Update Portfolio",
-      "favourite": true
-    },
-    {
-      "id": "7g8h",
-      "title": "Read JavaScript Guide",
-      "favourite": false
-    },
-    {
-      "id": "9i0j",
-      "title": "Deploy Firebase App",
-      "favourite": true
-    }
-  ]
+  "todos": []
 }
